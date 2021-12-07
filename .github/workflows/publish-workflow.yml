@@ -1,9 +1,11 @@
 name: Workflow Publisher
+
 on:
-  push:
-    branches: ['main']
-    paths:
-    - 'templates/**'
+    push:
+        branches: ['main']
+        paths:
+            - 'templates/**'
+            
 jobs:
   publish-workflow-template:
     runs-on: ubuntu-latest
