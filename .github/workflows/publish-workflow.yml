@@ -15,7 +15,7 @@ jobs:
       - name: Checkout Workflows
         uses: actions/checkout@v2
         with:
-          path: main
+          path: main/workflow
       - name: Checkout target repo
         uses: actions/checkout@v2
         with:
@@ -27,7 +27,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p .github/workflows/
-          cp ../main/workflows/templates/* .github/workflows/
+          cp ../main/workflow/templates/* .github/workflows/
         working-directory: ./${{ matrix.target_repo }}
       - name: Publish workflows
         shell: bash
