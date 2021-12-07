@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        target_repo: [ 'terraform-redis-cluster-gcp', 'terraform-grafana-synthetic-monitoring-checks' ]
+        target_repo: [ 'terraform-redis-cluster-gcp' ]
     steps:
       - name: Checkout Workflows
         uses: actions/checkout@v2
