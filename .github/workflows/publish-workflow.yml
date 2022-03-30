@@ -10,9 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        target_repo: [ 'terraform-redis-cluster-gcp', 'terraform-grafana-synthetic-monitoring-checks', 'grafana-observability-stack', 
-                       'terraform-gcp-metrics-grafana-datasource', 'terraform-google-iam-service-account', 'terraform-confluent-kafka-cluster', 
-                       'terraform-aws-s3-bucket-object', 'terraform-aws-s3-bucket', 'terraform-confluent-kafka-cluster' ]
+        target_repo: [ 'terraform-redis-cluster-gcp', 'terraform-grafana-synthetic-monitoring-checks', 'grafana-observability-stack', 'terraform-gcp-metrics-grafana-datasource', 'terraform-google-iam-service-account', 'terraform-confluent-kafka-cluster', 'terraform-aws-s3-bucket-object', 'terraform-aws-s3-bucket' ]
     steps:
       - name: Checkout Workflows
         uses: actions/checkout@v2
